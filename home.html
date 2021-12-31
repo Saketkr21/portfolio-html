@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <!-- <script src="home.js"></script> -->
+</head>
+<body >
+    <!--main------->
+    <section id="main">
+        <!--navigation----->
+        <nav>
+            <!--menu----->
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#skill">Skills</a></li>
+                <li><a href="#proj">Projects</a></li>
+                <li><a href="#achievement">Training</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!--content-->
+        <div class="content">
+            <div class="img-circular"></div>
+            <!--text-->
+            <div class="main-text">
+                <h1>Hey There! I am Saket Kumar.</h1>
+                <p>&nbsp;&nbsp;&nbsp; Software Engineer | ML/DL, Data Science practitioner | Part-time Competitive Programmer</p>
+            <!--btn-->
+                <a href="https://storage.googleapis.com/firegram-f1d98.appspot.com/resume_2021.pdf" class="portfolio-btn">View Resume</a>
+            </div>
+        </div>
+    </section>
+    <!--skills--->
+    <a id="skill" class="section-head" href="redirect/learn.html">Skills</a>
+    <section class="skills">
+        <ul class="skill-list">
+            <p>
+            <li>Programming languages:Python, Scala, Java, C/C++</li>
+            <li>Hadoop, Spark, Kafka, Flask, HTML , CSS</li>
+            <li>Data Science and Analysis, Machine Learning, Deep Learning</li>
+            <li>Libraries/Frameworks: Numpy, Pandas, Matplotlib, Tensorflow, pyspark</li>
+            </p>
+        </ul>
+    </section>
+    <!--projects-->
+    <section id ="proj" class="projects">
+        <a class="section-head" href="redirect/work.html">Projects</a>
+        <section class="recommender">
+            <div class="project" style="background-image: url('images/home-automationn.jpeg');">
+                <ul class="project-ul">
+                    <li class="heading">Home Automation</li>
+                    <li>Working model of IoT which controls home appliances like bulb, fan using voice command. Linked Google
+                        Assistant with the ESP8266 and Arduino using IFTTT.</li> 
+                    <li>Technology Used- Arduino, Relay, ESP8266 (NodeMCU), IFTTT</li>
+                    <a href="https://www.github.com/Saketkr21/Home-Automation/" class="project-btn-b">View</a>
+                </ul> 
+            </div>
+            <div class="project" style="background-image: url('images/tic-tac-toee.webp');">
+                <ul class="project-ul">
+                    <li class="heading">Tic Tac Toe GUI Game </li>
+                    <li>Runs In both single and multiplayer functionality.Uses Minimax algorithm to transform into unbeatable mode.</li> 
+                    <li>Technology Used- Python, tkinter.</li>
+                    <a href="https://www.github.com/Saketkr21/Python-GUI/" class="project-btn-a">View</a>
+                </ul> 
+            </div>
+            <div class="project" style="background-image: url('images/digit-recognitionn.jpg');">
+                <ul class="project-ul">
+                    <li class="heading">Hand written Digit Recognition </li>
+                    <li>Built a Neural Network model having 25 units in hidden layer. Trained the model using 5,000 digit sets,
+                        obtaining a validation set accuracy of 97.88% using advanced optimizer ’fmincg’.</li> 
+                    <li>Technology Used- MatLab, advance optimizer fmincg</li>
+                    <a href="#" class="project-btn">View</a>
+                </ul> 
+            </div>
+        </section>
+    </section>
+    <section id="achievement">
+        <a class="section-head" href="redirect/achievement.html">Training</a>
+        <section class="recommender">
+            <div class="training">
+                <ul class="project-ul">
+                    <li class="heading">Machine Learning -> Stanford University, Coursera </li>
+                    <li>Learned the foundation of machine learning by prof. Andrew Ng. Learned various machine learning techniques
+                        like regression, classification problems, Data Normalization, K- means clustering, SVM, and Neural Networks
+                        with Grade 95%.
+                    </li>
+                </ul> 
+            </div>
+            <div class="training" style="height: 300px;">
+                <ul class="project-ul">
+                    <li class="heading">Introduction to Data Science Training -> Udemy</li>
+                    <li>Used Pandas, numpy and matplotlib libraries of Python. Analysed data and Predicted home runs scored by
+                        baseball players using Statcast data.                    
+                    </li>
+                </ul> 
+            </div>
+        </section>
+    </section>
+    <br></br>
+    <!--footer---->
+    <section id="contact" class="footer">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <h1 class="footer-title">Contact</h1>
+        <div class="icons">
+            <a href="mailto:saketkr21june98@gmail.com"><i class="material-icons" style="font-size:36px">email</i></a>
+            <a href="https://www.facebook.com/Saketkumar21/" class="fa fa-facebook"></a>
+            <a href="https://www.linkedin.com/in/saketkr21/" class="fa fa-linkedin"></a>
+            <a href="https://www.github.com/Saketkr21/" class="fa fa-github"></a>
+        </div>
+    </section>
+</body>
+</html>

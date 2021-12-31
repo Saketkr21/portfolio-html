@@ -1,0 +1,426 @@
+@charset "utf-8";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+    background-color: rgb(233, 203, 203);
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.02);
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height:80px;
+    z-index: 1;
+    background-color: thistle;
+    border-radius: 30px;
+    /* transition: top 0.3s; */
+    
+}
+nav ul{
+    display: flex;
+}
+nav ul li a{
+    height: 40px;
+    line-height: 43px;
+    margin: 8px;
+    padding: 0px 44px;
+    display: flex;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: blue;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+nav ul li a:hover{
+    background-color: sandybrown;
+    color: slateblue;
+    box-shadow: 5px 10px 30px rgba(64,198,196,0.3);
+    transition: all ease 0.2s;
+}
+
+.img-circular{
+    background-image: url('images/profile-pic.jpg');
+    width: 420px;
+    height: 470px;
+    background-size: cover;
+    display: block;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    margin-top: 40px;
+    margin-left: 25px;
+}
+.main-text{
+    margin-top: 15%;
+    text-align: center;
+    font-size: 1.2rem;
+    
+}
+.main-text p{
+    font-weight: bold;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.main-text h1{
+    font-size: 2rem;
+    color: royalblue;
+    line-height: 60px;
+}
+.main-text p{
+    color: seagreen;
+}
+
+.portfolio-btn{
+    width: 170px;
+    height: 44px;
+    margin: 8% 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: springgreen;
+    background-color: steelblue;
+    border-radius: 20px;
+    box-shadow: 4px 10px 30px rgba(24,139,119,0.2);
+}
+
+.portfolio-btn:hover{
+    background-color: teal;
+    transition: all ease 0.2;
+}
+
+.section-head{
+    font-size: 25px;
+    font-weight: bold;
+    width: 30%;
+    height: 44px;
+    display: flex;
+    margin-left: 35% ;
+    justify-content: center;
+    align-items: center;
+    color: rgb(34, 1, 1);
+    background-color: rgb(184, 126, 126,0.2);
+    border-radius: 20px;
+}
+.section-head:hover {
+    background-color: rgb(52, 214, 114);
+}
+.skill-list{
+    list-style-type: circle;
+    line-height: 40px;
+
+}
+
+.skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3% 2%;
+    height: 300px;
+    list-style-type: circle;
+    background-color: rgb(231, 165, 174);
+    box-shadow: 5px 10px 30px rgba(2, 30, 48, 0.3);
+    border-radius: 20px;
+    font-size: 1.25rem;
+}
+.recommender{
+    display: flex;
+    justify-content: space-around;
+    margin: 2.5% 2%;
+}
+
+h6{
+    margin-left: 5%;
+}
+.project-ach  {
+    background-size: cover;
+    box-sizing: content-box;
+    border-radius: 20px;
+    box-shadow: 5px 10px 30px rgba(2, 30, 48, 0.3);
+    width: 100%;
+    height: 700px;
+    margin-right: 1%;
+    background-color: rgb(231, 165, 174);   
+}
+
+.project  {
+    background-size: cover;
+    box-sizing: content-box;
+    border-radius: 20px;
+    box-shadow: 5px 10px 30px rgba(2, 30, 48, 0.3);
+    width: 100%;
+    height: 450px;
+    margin-right: 1%;
+    background-color: rgb(231, 165, 174);    
+}
+
+
+.project-ul{
+    list-style-type: circle;
+    line-height: 40px;
+    margin: 5%;  
+}
+.project-ul li{
+    margin-left: 5%;
+    font-size: 1.2rem;
+    font-weight: 200px;
+}
+
+.training  {
+    background-size: cover;
+    box-sizing: content-box;
+    border-radius: 20px;
+    box-shadow: 5px 10px 30px rgba(2, 30, 48, 0.3);
+    width: 100%;
+    height: 300px;
+    margin-right: 1%;
+    background-color: rgb(231, 165, 174);
+}
+
+.heading{
+    
+    font-weight: bold;
+    list-style: none;
+    text-align: center;
+}
+
+.project-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: springgreen;
+    background-color: steelblue;
+    border-radius: 20px;
+    margin: 30% 35%; 
+    margin-top: 10%;    
+}
+.project-btn-a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: springgreen;
+    background-color: steelblue;
+    border-radius: 20px;
+    margin: 40% 35%;
+}
+.project-btn-b{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: springgreen;
+    background-color: steelblue;
+    border-radius: 20px;
+    margin: 20% 35%; 
+    margin-bottom: -30px;    
+}
+
+.project-btn:hover{
+    background-color: teal;
+    transition: all ease 0.2;
+}
+.project-btn-a:hover{
+    background-color: teal;
+    transition: all ease 0.2;
+}.project-btn-b:hover{
+    background-color: teal;
+    transition: all ease 0.2;
+}
+.footer{
+    display: block;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    border: 0px solid;
+    background-color: seagreen;
+    
+}
+.footer .footer-title{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-bottom: 1%;
+    
+}
+.icons{
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+}
+
+
+@media only screen and (max-width: 980px) {
+.recommender{
+    display: block;
+    margin-left: 2%;
+    margin-right: 2%;
+    }
+.project{
+    margin-right: 0px;
+    height: 500px;
+    margin-left: 5px;
+}
+.project-ul {
+    height: 400px;
+}
+.skills{
+    height: 450px;
+    margin-left: 10px;
+}
+.skill-list{
+    margin-left: 25px;
+}
+.skill-list li{
+    margin-left: 15px;
+}
+
+.section-head{
+    width: 60%;
+    height: 60px;
+    margin-left: 20% ;
+}
+
+.training  {
+    background-size: cover;
+    box-sizing: content-box;
+    border-radius: 20px;
+    box-shadow: 5px 10px 30px rgba(2, 30, 48, 0.3);
+    width: 100%;
+    height: 400px;
+    margin-right: 1%;
+    background-color: rgb(231, 165, 174);
+}
+
+.heading{
+    padding-top: 5%;
+} 
+.img-circular{
+    background-image: url('images/profile-pic.jpg');
+    width: 360px;
+    height: 360px;
+    background-size: cover;
+    display: block;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main-text{
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 0px;
+}
+.content{
+    display: block;
+    width: 100%;
+}
+.portfolio-btn{
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav{
+    display: block;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.02);
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height:200px;
+    z-index: 1;
+    background-color: thistle;
+    border-radius: 30px;
+    
+}
+nav ul{
+    display: block;
+    text-align: center;
+}
+nav ul li a{
+    
+    line-height: 40px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+}
+.project-ach  {
+    background-size: cover;
+    box-sizing: content-box;
+    border-radius: 20px;
+    box-shadow: 5px 10px 30px rgba(2, 30, 48, 0.3);
+    width: 100%;
+    height: 1200px;
+    margin-right: 1%;
+    background-color: rgb(231, 165, 174);   
+}
+
+}
